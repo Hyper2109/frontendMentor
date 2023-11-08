@@ -1,0 +1,167 @@
+.app{
+    background-image: url(assets/technology/background-technology-desktop.jpg);
+}
+.container{
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    z-index: 0;
+}
+.section1{
+    position: relative;
+    float: left;
+    top: 16%;
+    height: 82vh;
+    width: 50%;
+}
+.title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+.title p{
+    padding-left: 20px;
+    letter-spacing: 2px;
+}
+.t-container{
+    position: relative;
+    max-width: 100%;
+    height: 75%;
+}
+.b-container{
+    position: absolute;
+    padding-left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.button{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2rem;
+    border-radius: 100%;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 2em;
+}
+.b-active{
+    background-color: white;
+    color: black;
+}
+.t-text{
+    max-width: 50vw;
+    top: 15%;
+    position: absolute;
+    left: 30%;
+    color: white;
+    padding-left: 2rem;
+}
+#t-title{
+    text-transform: uppercase;
+    font-size: 4em;
+    white-space: nowrap;
+}
+#t-description{
+    max-width: 30vw;
+    font-size: 1.3em;
+}
+
+
+
+.section2{
+    float: right;
+    position: relative;
+    top: 16%;
+    height: 82vh;
+    width: 50%;
+}
+
+.t-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50vw;
+    height: auto;
+}
+.t-img img{
+    width: 30vw;
+}
+
+
+
+@media screen and (max-width: 980px){
+    .section1{
+        width: 100%;
+        height: 100%;
+    }
+    .t-text{
+        max-width: 100vw;
+        position: relative;
+        left: 0;
+        top: 40%;
+        color: white;
+    }
+    .b-container{
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+        white-space: nowrap;
+    }
+    .button{
+        display: inline;
+        position: relative;
+        align-items: center;
+        margin: 0 2rem 0 0;
+    }
+    #b3{margin: 0}
+    #t-title{
+        font-size: 11vw;
+        white-space: normal;
+    }
+    .t-text p{
+        display: flex;
+        justify-content: center;
+    }
+    #t-description{
+        display: flex;
+        justify-content: center;
+        padding: 0 2rem 0 2rem;
+        max-width: 100%;
+    }
+    .section2{
+        top: -5%;
+        width: 100%;
+        height: 60%;
+    }
+    .t-img img{
+        width: 80vw;
+        position: relative;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .button{
+        width: 20vw;
+        height: 20vw;
+    }
+    .t-container{
+        top: -10%;
+    }
+}
+@media screen and (max-width: 380px){
+    .section2{
+        top: 15%;
+    }
+}

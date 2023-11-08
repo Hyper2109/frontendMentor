@@ -1,0 +1,127 @@
+.app{
+    background-image: url(assets/crew/background-crew-desktop.jpg);
+}
+.container{
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    z-index: 0;
+}
+.section1{
+    position: relative;
+    float: left;
+    top: 16%;
+    height: 82vh;
+    width: 50%;
+}
+.title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+.title p{
+    padding-left: 20px;
+    letter-spacing: 2px;
+}
+.text{
+    color: white;
+    display: block;
+    justify-content: center;
+    padding-top: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#role{
+    opacity: 70%;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+#name{
+    text-transform: uppercase;
+    font-size: 4em;
+    white-space: nowrap;
+}
+#description{
+    font-size: 1.3em;
+}
+.t-description{
+    max-width: 100vw;
+    
+}
+.switcher{
+    position: relative;
+    padding-top: 2rem;
+}
+.switcher svg{
+    margin: 0 2rem 0 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 100%;
+}
+.s-active{
+    background-color: white;
+}
+
+
+
+.section2{
+    float: right;
+    position: relative;
+    top: 0%;
+    height: 100vh;
+    width: 50%;
+}
+.crew-img{
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    bottom: 0%;
+}
+.crew-img img{
+    position: fixed;
+    bottom: 0;
+    max-width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 980px){
+    .section1{
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+    .switcher{
+        white-space: nowrap;
+    }
+    #name{
+        white-space: normal;
+        font-size: 10vw;
+    }
+
+    .section2{
+        width: 100%;
+        height: 100vh;
+    }
+    .crew-img img{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+@media screen and (max-width: 375px){
+    .section1{
+        height: 100vh;
+    }
+    .section2{
+        height: 120vh;
+    }
+}
