@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background-color: #181824;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    height: 800px;
+}
+
+.wrapperHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.wrapperHeader h1{
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    margin-left: 10px;
+}
+.wrapperHeader img{
+    cursor: pointer;
+    height: 100%;
+    width: auto;
+    margin-right: 10px;
+}
+
+.createTodo{
+    width: 100%;
+    height: 120px;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.createTodo input{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #25273C;
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.createTodo input::placeholder{
+    font-size: .7em;
+    color: gray;
+}
+
+.todoListContainer{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.todoList{
+    height: 100%;
+    font-size: 2.5em;
+}
+
+.todoList li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #25273C;
+    border-bottom: 1px solid gray;
+    min-height: 90px;
+}
+
+.todoList li input{
+    margin: 0px 30px;
+}
+
+.todoList li p{
+    margin: 10px 0;
+    word-break: break-all;
+}
+
+.footerOptions{
+    border-radius: 0px 0px 10px 10px;
+    background-color: #25273C;
+    border-top: 1px solid gray;
+    width: 100%;
+    height: 120px;
+    justify-content: space-around;
+    font-size: 1em;
+    color: gray;
+    align-items: center;
+    display: flex;
+}
+
+.footerOptions button{
+    font-size: 1em;
+    background-color: transparent;
+    color: gray;
+    border: none;
+    outline: none;
+    cursor: pointer; 
+}
+
+.filters button:hover{
+    color: hsl(280, 87%, 65%) !important; 
+}
+
+#filterActive{
+    margin: 0px 20px;
+}
+
+#clearBtn:hover{
+    color: red;
+}
+
+
+
+
+/* Basic styling */
+[type=checkbox]:hover::before{
+    box-shadow: inset 0 0 0 1px hsl(280, 87%, 65%);
+}
+[type=checkbox] {
+    width: 2rem;
+    height: 2rem;
+    color: dodgerblue;
+    vertical-align: middle;
+    appearance: none;
+    background: none;
+    border: 0;
+    outline: 0;
+    flex-grow: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background 300ms;
+    cursor: pointer;
+  }
+  /* Pseudo element for check styling */ 
+  [type=checkbox]::before {
+    content: "";
+    color: transparent;
+    display: block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    border: 0;
+    background-color: transparent;
+    background-size: contain;
+    box-shadow: inset 0 0 0 1px gray;
+  }
+  /* Checked */
+  [type=checkbox]:checked {
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  }
+  [type=checkbox]:checked +p {
+    color: gray;
+    text-decoration:line-through;
+  }
+  [type=checkbox]:checked::before {
+    box-shadow: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cpath d='M15.88 8.29L10 14.17l-1.88-1.88a.996.996 0 1 0-1.41 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7a.996.996 0 0 0 0-1.41c-.39-.39-1.03-.39-1.42 0z' fill='%23fff'/%3E %3C/svg%3E");
+  }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="mainContainer">
+    <div class="scoreMainContainer marginTop40">
+      <div class="titleContainer">
+        <img src="./images/logo.svg" alt="">
+      </div>
+      <div class="scoreContainer">
+        <div class="scoreBox">
+          <p style="color: hsl(229, 64%, 46%); font-size: 1.3em;">Score</p>
+          <p id="score" style="color: hsl(229, 25%, 31%); font-size: 5em;">0</p>
+        </div>
+      </div>
+    </div>
+    <div class="gameContainer marginTop40">
+      <div class="paperContainer sign">
+        <img src="./images/icon-paper.svg" alt="">
+      </div>
+      <div class="rockContainer sign">
+        <img src="./images/icon-rock.svg" alt="">
+      </div>
+      <div class="scissorsContainer sign">
+        <img src="./images/icon-scissors.svg" alt="">
+      </div>
+    </div>
+    
+    <div class="resultMainContainer">
+      <div class="pickedContainer">
+        <p>You picked</p>
+        <div class="pickedBox"></div>
+      </div>
+      <div class="resultContainer">
+        <p id="result">_RESULT_</p>
+        <button id="playButton">Play Again</button>
+      </div>
+      <div class="opponentContainer">
+        <p>The house picked</p>
+        <div class="pickedOpponentBox"></div>
+      </div>
+    </div>
+  </div>  
+  
+
+  <script src="./script.js"></script>
+</body>
+</html>

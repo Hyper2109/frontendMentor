@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="./images/bg-desktop-dark.jpg" alt="" style="position: absolute; width: 100%; height: auto; top: 0; left: 0; z-index: -999;">
+    <div class="wrapper">
+        <div class="wrapperHeader">
+            <h1>Todo</h1>
+            <img src="./images/icon-sun.svg" alt="">
+        </div>
+        <div class="createTodo">
+            <input type="text" id="newTodoTextArea" placeholder="Create a new todo..." autocomplete="off">
+        </div>
+
+        <div class="todoListContainer">
+            <ul class="todoList">
+                
+            </ul>
+        </div>
+
+        <div class="footerOptions">
+            <p id="itemsLeft">0 items left</p>
+            <div class="filters">
+                <button id="filterAll">All</button>
+                <button id="filterActive">Active</button>
+                <button id="filterCompleted">Completed</button>
+            </div>
+            <button id="clearBtn">Clear Completed</button>
+        </div>
+    </div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
